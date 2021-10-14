@@ -21,6 +21,8 @@
     "parse-git-config": "^3.0.0"
   },
   "scripts": {
-    "netlify": "netlify dev"
+    "dev": "netlify dev",
+    "build": "netlify build",
+    "dry": "netlify build --dry"
   }
 }
