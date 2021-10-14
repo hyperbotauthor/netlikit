@@ -21,6 +21,6 @@
     "parse-git-config": "^3.0.0"
   },
   "scripts": {
-    "netlify": "netlify init"
+    "netlify": "netlify open"
   }
 }
