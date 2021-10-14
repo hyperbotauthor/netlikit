@@ -1,0 +1,22 @@
+{
+  "name": "@publishvue/netlikit",
+  "version": "1.0.0",
+  "contributors": [
+    "hyperbotauthor <hyperchessbotauthor@gmail.com>"
+  ],
+  "description": "Netlify lichess octokit.",
+  "keywords": [
+    "netlify",
+    "lichess",
+    "octokit"
+  ],
+  "repository": "https://github.com/hyperbotauthor/netlikit",
+  "homepage": "https://github.com/hyperbotauthor/netlikit#netlikit",
+  "bugs": {
+    "url": "https://github.com/hyperbotauthor/netlikit/issues",
+    "email": "hyperchessbotauthor@gmail.com"
+  },
+  "devDependencies": {
+    "parse-git-config": "^3.0.0"
+  }
+}
