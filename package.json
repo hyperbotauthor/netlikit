@@ -24,5 +24,8 @@
     "dev": "netlify dev",
     "build": "netlify build",
     "dry": "netlify build --dry"
+  },
+  "dependencies": {
+    "octokit": "^1.7.0"
   }
 }
