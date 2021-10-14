@@ -17,6 +17,10 @@
     "email": "hyperchessbotauthor@gmail.com"
   },
   "devDependencies": {
+    "netlify-cli": "^6.13.2",
     "parse-git-config": "^3.0.0"
+  },
+  "scripts": {
+    "netlify": "netlify init"
   }
 }
