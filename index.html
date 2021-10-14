@@ -1,1 +1,5 @@
 netlikit index
+
+<script>
+  fetch("/.netlify/functions/test").then(response => response.text().then(content => window.alert(content)))
+</script>
