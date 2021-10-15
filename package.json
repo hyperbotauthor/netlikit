@@ -21,11 +21,13 @@
     "parse-git-config": "^3.0.0"
   },
   "scripts": {
+    "auth": "netlify login",
     "dev": "netlify dev",
     "build": "netlify build",
     "dry": "netlify build --dry"
   },
   "dependencies": {
+    "node-fetch": "2.6.5",
     "octokit": "^1.7.0"
   }
 }

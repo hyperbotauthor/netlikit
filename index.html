@@ -1,5 +1,19 @@
 netlikit index
 
 <script>
-  fetch("/.netlify/functions/test").then(response => response.text().then(content => window.alert(content)))
+  const token = localStorage.getItem("LICHESS_TOKEN")
+
+  console.log(localStorage, token)
+
+  const request = {
+    action: "upload",
+    token,
+    fileName: "localstorage",
+    content: "test"
+  }
+
+  fetch("/.netlify/functions/test", {
+    method: "POST",
+    body: JSON.stringify(request),
+  }).then(response => response.text().then(content => window.alert(content)))
 </script>
