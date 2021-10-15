@@ -24,7 +24,8 @@
     "auth": "netlify login",
     "dev": "netlify dev",
     "build": "netlify build",
-    "dry": "netlify build --dry"
+    "dry": "netlify build --dry",
+    "gen": "cd nuxtsite && yarn generate"
   },
   "dependencies": {
     "node-fetch": "2.6.5",
