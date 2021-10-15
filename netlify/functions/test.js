@@ -25,7 +25,7 @@ exports.handler = async function(event, context) {
 
     const storePath = `lichess/${id}/${request.fileName}`
 
-    console.log("resolved account", id, storePath)
+    console.log("resolved store path", storePath)
 
     const buff = Buffer.from(request.content)
 
@@ -46,13 +46,13 @@ exports.handler = async function(event, context) {
       sha: info.sha || undefined
     })
 
-    console.log(create)
-
     const createSummary = {
       storePath,
       status: create.status,
       contentSize: create.data.content.size
     }
+
+    console.log(createSummary)
 
     return {
       statusCode: 200,
@@ -63,9 +63,6 @@ exports.handler = async function(event, context) {
       statusCode: 200,
       body: "you should use a POST request"
     }
-  }
-
-  //const result = await octokit.rest.users.getAuthenticated()
-  
+  }  
   
 }
