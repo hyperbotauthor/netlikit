@@ -1,12 +1,26 @@
-Token<hr><input type="text" id="token"></input><hr>
+Token<hr><input type="text" id="token"></input>
+<hr>
 
 Content<hr><textarea id="content" style="width: 600px; height: 100px;"></textarea><hr>
 
 <button onclick="submit()">Submit</button>
 
 <script>
+  document.getElementById("token").value = localStorage.getItem("LICHESS_TOKEN") || ""
+
   function submit(){
-    const token = document.getElementById("token").value ||localStorage.getItem("LICHESS_TOKEN")
+    const storedToken = localStorage.getItem("LICHESS_TOKEN")
+
+    const uiToken = document.getElementById("token").value
+
+    let token
+
+    if(uiToken){
+      localStorage.setItem("LICHESS_TOKEN", uiToken)      
+      token = uiToken
+    }else{
+      token = storedToken
+    }
 
     const content = document.getElementById("content").value
 
