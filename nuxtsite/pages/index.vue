@@ -1,7 +1,18 @@
 <template>
   <div>
+    Upload content to <a href="https://github.com/hyperbotauthor/blobs/tree/main/lichess" target="_blank" rel="noopener noreferrer">https://github.com/hyperbotauthor/blobs/tree/main/lichess</a> under your lichess username resolved from your lichess access token ( this ensures that third parties cannot upload under your lichess username, so your content will be unique to you ).
 
-    Token
+    <hr>
+
+    For your security lichess access token should have no scopes ticked, basic token just enough for resolving your lichess username.
+
+    <hr>
+
+    <a href="https://lichess.org/account/oauth/token/create?description=netlikit" target="_blank" rel="noopener noreferrer">Create lichess access token</a>
+
+    <hr>
+
+    lichess access token
 
     <hr>
 

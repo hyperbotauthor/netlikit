@@ -25,7 +25,8 @@
     "dev": "netlify dev",
     "build": "netlify build",
     "dry": "netlify build --dry",
-    "gen": "cd nuxtsite && yarn generate"
+    "gen": "cd nuxtsite && yarn generate",
+    "nuxt": "cd nuxtsite && yarn dev"
   },
   "dependencies": {
     "node-fetch": "2.6.5",
