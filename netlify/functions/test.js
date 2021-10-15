@@ -23,6 +23,13 @@ exports.handler = async function(event, context) {
 
     const id = account.id
 
+    if(!id){
+      return {
+        statusCode: 404,
+        body: "ERROR: Could not resolve token."
+      }
+    }
+
     const storePath = `lichess/${id}/${request.fileName}`
 
     console.log("resolved store path", storePath)
